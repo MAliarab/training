@@ -30,13 +30,13 @@ class Color(ABC):  # Implementation
         pass
 
 
-class Red(Color):  # Concret implementation 1
+class Red(Color):  # Concrete implementation 1
 
     def paint(self, obj):
         return f"This is a red {obj}"
 
 
-class Blue(Color):  # Concret implementation 2
+class Blue(Color):  # Concrete implementation 2
 
     def paint(self, obj):
         return f"This is a blue {obj}"

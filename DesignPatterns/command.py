@@ -13,7 +13,7 @@ class Command(ABC):  # Command interface
         pass
 
 
-class LogCommand(Command):  # Simple command (no need to reciever)
+class LogCommand(Command):  # Simple command (no need to receiver)
 
     def __init__(self, content):
         self.content = content
@@ -32,20 +32,20 @@ class SendNotificationCommand(Command):  # Complex command
         return self.notification.send(self.content)
 
 
-class Notification(ABC):  # Reciever Interface
+class Notification(ABC):  # Receiver Interface
 
     @abstractmethod
     def send(self, content):
         pass
 
 
-class EmailNotification(Notification):  # Concret reciever 1
+class EmailNotification(Notification):  # Concrete receiver 1
 
     def send(self, content):
         print(f"Email sent with this content: {content}")
 
 
-class SMSNotification(Notification):  # Concret reciever 2
+class SMSNotification(Notification):  # Concrete receiver 2
 
     def send(self, content):
         print(f"SMS send with this content: {content}")
