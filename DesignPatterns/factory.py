@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-# ============ Implemetation 1 ============
+# ============ Implementation 1 ============
 
 class File(ABC):
 
